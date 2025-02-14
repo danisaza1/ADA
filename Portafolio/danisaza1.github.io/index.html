@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- el idioma que estas escribiendo el codigo-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!--Estilos CSS -->
+   
+   <link rel="stylesheet" href="style.css"> 
+   <!-- aqui importante, siempre poner en href el nombre que le pusiste a 
+   fichier. -->
+
+
+   <!-- Favicons une petite icône qui représente un site web 
+    dans diverses parties  d’un navigateur web, comme les onglets,
+    les signets, et l’historique de navigation por lo 
+    general esta al lado del HTTP. -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <!-- Animaciones CSS CDN ce dernier est un reseau de diffusion de contenu,
+     groupe de serveurs repartis geographiquemnt qui met en cache le 
+     contenu pour etre plus rapide  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title> Daniela ISAZA H | Desarrolladora Web</title>
+   <!-- esto es el titulo que aparece en icono de la page  -->
+
+
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+
+    <nav>
+        <h1>Daniela ISAZA H</h1>
+        <ul class="navegacion">
+  <!-- aqui se utilisa el UL para representer une liste non ordonne 
+   des elements et LI represente un element individuel dans une liste -->   
+          <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+          <li><a href="#habilidaes" class="nav-link">Habilidades</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+<!-- href es un atributo de referencia,cuando el usuario hace 
+ click en cualquiera de los elementos de navegación, se le lleva 
+ a la sección que corresponde al elemento de navegación en el 
+ que hace click, tienen que poner el # -->
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+ <!--Este estará escondido en nuestra versión de escritorio pero se 
+ mostrará en dispositivo móvil.-->
+          <ion-icon class="barras" name="menu-outline"></ion-icon>
+<!-- L'ion-icon est un composant intégré au framework Ionic pour
+  afficher des icônes. IONIC est un framework libre d'uitlisation
+  FRAMEWORK CSS une feuille de style CSS que vous allez pouvoir 
+  importer sur votre page et qui va vous permettre d'avoir 
+  des styles prédéfinis pour un certain nombre d'éléments-->
+        </button>
+  </nav>
+
+    <!-- Sección Hero  -->
+    <!-- A Hero Image is a large image with text, often placed at the 
+     top of a webpage -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/matisse.jpg" 
+        alt="Daniela Ih" 
+        loading="lazy"
+        class="hero-img"
+      />
+ <!-- SVG (Scalable Vector Graphics) est un format 
+  de fichier vectoriel optimisé pour le web. Contrairement 
+  aux fichiers pixellisés comme les JPEG, les fichiers 
+  vectoriels stockent des images via des formules 
+  mathématiques basées sur des points et des lignes dans une grill
+  -SOURCE est où l'imagen est stocke 
+  -ALT  Specifies an alternate text for the image, 
+  if the image for some reason cannot be displayed
+  -LOADING Lazy: tag determines when an image is loaded. The image
+   loads when it scrolls into the viewport. This helps
+    optimize page performance by deferring the loading 
+    of off-screen images.
+  -CLASS ttribute can be assigned to an img element to 
+  apply specific styles or behaviors. 
+  -->
+      <div class="bio animate__animated animate__shakeX">
+        <!-- animate__animated: This class is a base class that must be added to any element you wish to animate using Animate.css.
+        animate__shakeX: This specific class is used to apply a horizontal shaking effect to an element -->
+        <h2 class="bio-titulo">HELLO!</h2>
+        <br>
+    <p class="bio-texto">
+      C'est que le debut </p> 
+      </div>
+</section>
+
+
+
+
+
+<!-- Sobre Mí -->
+<section class="mas-sobre">
+  <h2>Más sobre mí</h2>
+<p>Je suis une femme passionnée, motivée et déterminée, qui débute dans le monde fascinant
+  de la programmation. À travers cet univers, je cherche à combiner ma soif d'apprentissage
+  avec mes valeurs humaines, car pour moi, chaque individu mérite d'être perçu et traité 
+  comme un égal. Cette philosophie guide mon approche, non seulement dans ma vie 
+  professionnelle, mais aussi dans ma manière d’interagir avec les autres et de créer.</p><br>
+  <p> L'objectif en tant que développeuse est de créer des solutions innovantes et 
+      accessibles, tout en restant fidèle à mes convictions humanistes. J’ai hâte de 
+      pouvoir combiner mes passions, mes compétences techniques et mon respect pour 
+      l’égalité afin d’apporter ma contribution à des projets significatifs.</p>
+    </p>
+  </section>
+
+  
+
+    <!-- Sección Habilidades -->
+    <section class="habilidades" id="habilidades">
+      <h2 class="header-habilidadr">Mis mejores habilidades</h2>
+
+      <div class="contenedor-habilidades">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/css.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Sección Contacto-->
+
+    <section class="contacto" id="contacto">
+      <h2>Contactame</h2>
+      <div class="formulario-contacto-contenedor">
+          <form action="https://formspree.io/f/mjkgrkqk" method="POST">
+  <!-- Con Formspree, puedes recibir el mensaje directamente a la bandeja
+    de entrada de tu correo electrónico sin necesidad de configurar un
+     servidor con PHP o JavaScript complejos. -->
+            <div class="control-formulario">
+              <label for="name">Nombre</label>
+    <!-- También hay un atributo  name para todos los campos de input. 
+    Esto es requerido por el servicio de envió de formularios de
+     Formspree. -->
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Escribe tu nombre"
+                class="input-field"
+                required
+              />
+           <!-- required , de esa forma,  el formulario se niega a 
+              enviar la información si el usuario deja algún campo 
+              vacío. -->
+            </div>
+            <div class="control-formulario">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Ingreso tu correo electrónico"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                cols="60"
+                rows="10"
+                placeholder="Escribe tu mensaje"
+                name="mensaje"
+                class="input-field"
+                required
+              ></textarea>
+              <!-- textarea para que la gente escriba el mensaje que quieran enviar  -->
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección de redes sociales - Fijado a la derecha -->
+    <div class="sociales">
+      <a href="#" target="_self"
+        >
+        <!--  Lorsque vous utilisez a href="#" 
+          target="_blank", cela signifie que le lien va s'ouvrir
+           dans une nouvelle fenêtre ou un nouvel onglet, sans 
+           quitter la page actuelle. 
+           target="_self" le lien va s'ouvrir dans la meme fenetre
+           ou onglet  -->
+           
+           <img
+          src="assets/icons/icons8-instagram.png"
+          alt="Instagram"  
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <!-- loading attribute on an <img> tag determines when an image 
+       is loaded. The possible values are lazy and eager.
+  Eager: This is the default value. The image loads and displays
+   immediately after the page loads.
+Lazy: The image loads when it scrolls into the viewport. 
+This helps to optimize page performance by deferring the loading 
+of off-screen images.
+      gifs animados de la plataforma icons8. -->
+      <a href="https://www.linkedin.com/in/daniela-i-0bb767111/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/danisaza1" target="_blank"
+        ><img src="assets/icons/icons8-github.png" alt="Github" class="socicon"
+      /></a>
+    </div>
+    
+
+
+    <!-- Vuelve al comienzo  -->
+
+    <!-- Sección Footer  -->
+
+    <!-- Le footer CSS est une partie de la feuille de style CSS utilisée 
+    pour styliser le pied de page d'un site Web. Le pied de page, 
+    représenté par le tag HTML  footer , est généralement utilisé 
+      pour contenir des informations telles que les droits d'auteur, 
+      les coordonnées, les liens de navigation et d'autres éléments
+       pertinents. -->
+
+
+
+
+
+
+
+
+    <!-- Website scripts 
+     Les scripts de site web sont des morceaux de code utilisés pour
+      ajouter des fonctionnalités interactives et dynamiques à une page
+     web-->
+    <script src="assets/js/app.js"></script>
+
+
+
+
+    <!-- Ion icons scripts Ionicons est une collection d’icônes
+      open source et MIT licenciées, conçues pour être utilisées
+       dans les applications web, iOS, Android et de bureau.  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+ 
+
+
+
+
+ 
+  
+    
+
+
+
+
+
+
+
+  </body>
+  </html>
+  
+  

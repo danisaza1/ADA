@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<body>
+
+  <h1>Sum user entries</h1>
+
+  <p id="sumOperation">-- Operation description --</p>
+  <p id="sumResult">-- Operation result --</p>
+
+  <script>
+
+    // Return the sum of the two parameters
+    function sum (a, b) {
+      return a + b;
+    }
+
+    // Prompt the user in order to get is numbers to calculate
+    // Then parse it to a number type
+    function promptNumber(message) {
+      
+      // prompt et alert ce sont des functions, ou mieux dire des methodes 
+      // de window quiere decir un pop up que aparece
+      console.log("Prompt is going to be presented")
+      let promptedString = prompt(message);
+      return parseInt(promptedString)
+    }
+
+    let numberPromptA = promptNumber("Choose the number a :");
+    console.log(numberPromptA)
+
+    let numberPromptB = promptNumber("Choose the number b :");
+    console.log(numberPromptB)
+
+    let aPlusB = sum(numberPromptA, numberPromptB);
+    // pour changer une chaine de string en number on 
+    // met un + pour passer en maths, exemple : numberPromptA, numberPromptB 
+    // y on mets numberPromptA, +numberPromptB, pero aqui 
+    // es mejor no hacerlo, es mas lisible
+    console.log(aPlusB)
+
+  
+
+    document.getElementById('sumOperation').innerText = numberPromptA + " + " + numberPromptB + " = "
+    document.getElementById('sumResult').innerText = aPlusB 
+    // il y avait sumResuls avec un S a la fin 
+
+    console.log(aPlusB);
+
+  </script>
+</body>
